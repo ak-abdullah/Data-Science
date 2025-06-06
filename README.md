@@ -94,11 +94,12 @@ To forecast trends and patterns, the following models were applied:
 
 ## 🧑‍🎓 Author
 
-**Name:** Muhammad Abdullah Khalid
+**Name:** Muhammad Abdullah Khalid  
 **Program:** BS Data Science  
 **University:** FAST – National University of Computer & Emerging Sciences  
-**Supervisor:** Sir Mughees Ismail
+**Supervisor:** Sir Mughees Ismail  
 **Term:** Spring 2025
+
 
 ---
 
