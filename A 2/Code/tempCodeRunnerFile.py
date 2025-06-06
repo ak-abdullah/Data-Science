@@ -1,0 +1,1 @@
+merged_df.to_csv('merged.csv', index=False)

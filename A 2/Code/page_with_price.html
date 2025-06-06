@@ -1,0 +1,810 @@
+<html lang="da" data-previous-scroll-y="-0px" class="sp-message-open"><head><style>@import url(https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap);</style><style>.gdpr-modal{display:flex !important;align-items:center;justify-content:center;position:fixed;top:0;bottom:0;left:0;right:0;background-color:rgba(0,0,0,.34);color:#020b23;visibility:hidden;opacity:0;transition-property:opacity,visibility;transition-duration:.5s;transition-timing-function:cubic-bezier(0, 1, 0.5, 1);z-index:100002;font-family:Schibsted Grotesk,system-ui,blinkmacsystemfont,-apple-system,"Segoe UI",roboto,helvetica,arial,sans-serif;font-size:15px;line-height:1.3;overflow:auto}@media only screen and (min-width: 824px){.gdpr-modal{font-size:16px;line-height:1.5}}.gdpr-modal.gdpr-modal--open{visibility:visible;opacity:1}.gdpr-modal.gdpr-modal--open .gdpr-modal__content{max-height:90%;overflow-y:auto}.gdpr-modal.gdpr-modal--open .gdpr-modal__content .gdpr-modal__content-top{overflow-y:auto;padding:24px 16px;margin:0 16px}@media only screen and (min-width: 824px){.gdpr-modal.gdpr-modal--open .gdpr-modal__content .gdpr-modal__content-top{padding:40px 32px}}.gdpr-modal.gdpr-modal--open .gdpr-modal__content .gdpr-modal__content-bottom{position:sticky;bottom:0;background:#fff;padding:24px 16px;box-shadow:0 0 3px 0 rgba(0,0,0,.25)}@media only screen and (min-width: 824px){.gdpr-modal.gdpr-modal--open .gdpr-modal__content .gdpr-modal__content-bottom{padding:32px 0}}.gdpr-modal__content{position:relative;margin:auto;box-sizing:border-box;width:343px;max-height:0;border-radius:40px;background:#fff;transition-property:max-height;transition-duration:.5s;transition-timing-function:cubic-bezier(0, 1, 0.5, 1)}@media only screen and (max-width: 667px)and (orientation: landscape){.gdpr-modal__content{width:auto}}@media only screen and (min-width: 824px){.gdpr-modal__content{width:625px;border-radius:60px}}.gdpr-modal__header{font-size:16px;text-align:center;position:relative;margin-bottom:24px}@media only screen and (min-width: 824px){.gdpr-modal__header{font-size:14px}}@media only screen and (max-width: 667px)and (orientation: landscape){.gdpr-modal__header{margin-bottom:16px}}.gdpr-modal__header-logo{display:block;width:40px;height:40px;border-radius:20px;margin:0 auto;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Crect width='80' height='80' fill='%23264BC5'/%3E %3Cpath d='M29.4277 40.6274C28.7689 40.6274 28.2669 41.1293 28.2669 41.788C28.2668 42.0894 28.3786 42.38 28.5806 42.6036C28.8316 42.886 29.5532 43.5134 29.9924 43.8898C30.2434 44.1094 30.5571 44.1407 30.7139 44.1407C31.3727 44.1407 31.8747 43.6388 31.8747 42.9801C31.8747 42.6664 31.6865 42.2586 31.4355 42.0704C31.059 41.788 30.4002 41.1606 30.2434 41.0038C30.0237 40.7842 29.6787 40.6274 29.4277 40.6274ZM33.255 43.7016C32.659 43.7016 32.2198 44.1407 32.2198 44.7368C32.2198 45.1759 32.4707 45.4896 32.8158 45.6779C33.0354 45.8033 33.4746 45.9602 33.7884 46.0857C34.008 46.1798 34.0393 46.1798 34.1021 46.1798C34.855 46.1798 35.2001 45.6465 35.2001 45.1759C35.2001 44.674 34.855 44.2976 34.5727 44.1721C33.7884 43.8584 33.9452 43.8898 33.7256 43.7957C33.6001 43.7329 33.3805 43.7016 33.255 43.7016ZM37.0824 45.1132C36.4863 45.0191 35.953 45.3642 35.953 45.9915C35.9505 46.2195 36.0274 46.4412 36.1705 46.6186C36.3136 46.796 36.514 46.9181 36.7373 46.964C36.964 47.0163 37.195 47.0478 37.4275 47.0581C37.9608 47.0581 38.3686 46.6817 38.3686 46.1484C38.3686 45.7092 38.0235 45.3014 37.5843 45.2073C37.3961 45.1759 37.1765 45.1446 37.0824 45.1132ZM32.0943 39.0589C31.4668 39.0589 30.9963 39.5294 30.9963 40.1568C30.9963 40.5333 31.1845 40.8783 31.3414 41.0352C31.5296 41.2234 32.7531 42.1645 33.0041 42.3213C33.2154 42.4391 33.4523 42.5037 33.6942 42.5095C34.2589 42.5095 34.7609 42.039 34.7609 41.443C34.7609 41.0352 34.5413 40.6274 34.2589 40.4391C33.8511 40.1882 33.255 39.7176 32.8786 39.3726C32.6276 39.153 32.3766 39.0589 32.0943 39.0589ZM40 45.521C39.498 45.521 39.1216 45.8974 39.1216 46.3993C39.1216 46.9013 39.498 47.2777 40 47.2777C40.5019 47.2777 40.8784 46.9013 40.8784 46.3993C40.8784 45.8974 40.5019 45.521 40 45.521ZM36.7373 41.7253C35.9216 41.5371 35.4197 41.9449 35.4197 42.6036C35.4197 43.1369 35.7334 43.5134 36.1412 43.6388C36.8314 43.8584 37.0824 43.9212 37.2706 43.9212C37.8039 43.9212 38.2745 43.5134 38.2745 42.9173C38.2745 42.4468 37.9922 42.1017 37.4902 41.9449C36.6118 41.6939 36.8001 41.7253 36.7373 41.7253ZM40 42.3213C39.498 42.3213 39.1216 42.6977 39.1216 43.1997C39.1216 43.7016 39.498 44.078 40 44.078C40.5019 44.078 40.8784 43.7016 40.8784 43.1997C40.8784 42.6977 40.5019 42.3213 40 42.3213ZM34.7923 37.1453C34.2276 37.1453 33.757 37.6159 33.757 38.2119C33.757 38.5256 33.9452 38.8707 34.1648 39.0589C34.604 39.4353 36.1099 40.3137 37.051 40.596C37.1628 40.632 37.2788 40.6531 37.3961 40.6587C37.5325 40.6602 37.6678 40.6344 37.794 40.5829C37.9203 40.5314 38.035 40.4552 38.1314 40.3588C38.2279 40.2624 38.3041 40.1477 38.3556 40.0214C38.4071 39.8952 38.4329 39.7599 38.4314 39.6235C38.4314 39.0903 38.0549 38.7138 37.7098 38.5883C36.8942 38.2746 35.953 37.7727 35.4824 37.3963C35.2903 37.2319 35.0451 37.1428 34.7923 37.1453ZM40 39.1216C39.498 39.1216 39.1216 39.4981 39.1216 40C39.1216 40.5019 39.498 40.8783 40 40.8783C40.5019 40.8783 40.8784 40.5019 40.8784 40C40.8784 39.4981 40.5019 39.1216 40 39.1216ZM40.0313 15.72C30.9963 15.72 24.22 22.6526 24.22 31.1851C24.22 34.6044 25.318 38.4942 26.5101 39.9372C26.7925 40.2823 27.1062 40.5333 27.5767 40.5333C28.2983 40.5333 28.8316 40 28.8316 39.2785C28.8316 39.0589 28.7375 38.7766 28.6434 38.6197C28.361 38.2119 28.8316 37.9296 29.0512 38.306C29.2395 38.6197 29.6787 38.9334 30.1806 38.9334C30.8394 38.9334 31.3727 38.3688 31.3727 37.7414C31.3714 37.4988 31.3065 37.2609 31.1845 37.0512C30.8708 36.5493 31.3727 36.3611 31.561 36.6748C31.8119 37.0826 32.2511 37.3336 32.6903 37.3336C33.0148 37.3336 33.326 37.2047 33.5555 36.9752C33.7849 36.7458 33.9138 36.4346 33.9138 36.1102C33.9138 35.8906 33.8511 35.6396 33.757 35.4828C33.0668 34.2593 32.7531 33.0046 32.7531 31.5929C32.7531 27.1071 35.8589 23.876 40 23.876C43.3881 23.876 46.0861 26.0405 46.9645 29.2402L55.0898 26.6052C53.1134 20.1431 47.2782 15.72 40.0313 15.72ZM50.5723 39.3726C51.2311 39.3726 51.733 38.8707 51.733 38.2119C51.7331 37.9106 51.6213 37.6199 51.4193 37.3963C51.1683 37.114 50.4468 36.4866 50.0076 36.1102C49.7566 35.8906 49.4429 35.8592 49.286 35.8592C48.6272 35.8592 48.1253 36.3611 48.1253 37.0199C48.1253 37.3336 48.3135 37.7414 48.5645 37.9296C48.9409 38.2119 49.5997 38.8393 49.7566 38.9961C49.9762 39.2157 50.3213 39.3726 50.5723 39.3726ZM46.7449 36.2984C47.341 36.2984 47.7802 35.8592 47.7802 35.2632C47.7802 34.824 47.5292 34.5103 47.1841 34.3221C46.9645 34.1966 46.5253 34.0398 46.2116 33.9143C45.992 33.8202 45.9606 33.8202 45.8979 33.8202C45.1449 33.8202 44.7999 34.3535 44.7999 34.824C44.7999 35.3259 45.1449 35.7023 45.4273 35.8278C46.2116 36.1415 46.0547 36.1102 46.2743 36.2043C46.3998 36.267 46.6194 36.2984 46.7449 36.2984ZM42.9175 34.8867C43.5136 34.9808 44.0469 34.6358 44.0469 34.0084C44.0494 33.7805 43.9725 33.5588 43.8294 33.3814C43.6863 33.2039 43.4859 33.0818 43.2626 33.0359C43.0359 32.9837 42.8049 32.9522 42.5725 32.9418C42.0391 32.9418 41.6313 33.3183 41.6313 33.8515C41.6313 34.2907 41.9764 34.6985 42.4156 34.7926C42.6038 34.824 42.8234 34.8554 42.9175 34.8867ZM47.9057 40.9411C48.5331 40.9411 49.0037 40.4705 49.0037 39.8431C49.0037 39.4667 48.8154 39.1216 48.6586 38.9648C48.4703 38.7766 47.2468 37.8355 46.9959 37.6786C46.7845 37.5608 46.5476 37.4962 46.3057 37.4904C45.741 37.4904 45.2391 37.961 45.2391 38.557C45.2391 38.9648 45.4587 39.3726 45.741 39.5608C46.1488 39.8118 46.7449 40.2823 47.1214 40.6274C47.3723 40.8469 47.6233 40.9411 47.9057 40.9411ZM40 34.4789C40.5019 34.4789 40.8784 34.1025 40.8784 33.6006C40.8784 33.0987 40.5019 32.7222 40 32.7222C39.498 32.7222 39.1216 33.0987 39.1216 33.6006C39.1216 34.1025 39.498 34.4789 40 34.4789ZM43.2626 38.2746C44.0783 38.4629 44.5802 38.0551 44.5802 37.3963C44.5802 36.863 44.2665 36.4866 43.8587 36.3611C43.1685 36.1415 42.9175 36.0788 42.7293 36.0788C42.196 36.0788 41.7254 36.4866 41.7254 37.0826C41.7254 37.5531 42.0078 37.8982 42.5097 38.0551C43.3881 38.306 43.1999 38.2746 43.2626 38.2746ZM40 37.6786C40.5019 37.6786 40.8784 37.3022 40.8784 36.8003C40.8784 36.2984 40.5019 35.9219 40 35.9219C39.498 35.9219 39.1216 36.2984 39.1216 36.8003C39.1216 37.3022 39.498 37.6786 40 37.6786ZM45.2077 42.8546C45.7724 42.8546 46.243 42.3841 46.243 41.788C46.243 41.4743 46.0547 41.1293 45.8351 40.9411C45.3959 40.5646 43.8901 39.6863 42.9489 39.4039C42.8371 39.3679 42.7211 39.3468 42.6038 39.3412C42.4675 39.3397 42.3322 39.3655 42.2059 39.417C42.0796 39.4685 41.9649 39.5447 41.8685 39.6411C41.7721 39.7376 41.6959 39.8523 41.6444 39.9785C41.5929 40.1048 41.5671 40.2401 41.5686 40.3764C41.5686 40.9097 41.945 41.2861 42.2901 41.4116C43.1058 41.7253 44.0469 42.2272 44.5175 42.6036C44.7096 42.768 44.9548 42.8572 45.2077 42.8546ZM40 40.8783C40.5019 40.8783 40.8784 40.5019 40.8784 40C40.8784 39.4981 40.5019 39.1216 40 39.1216C39.498 39.1216 39.1216 39.4981 39.1216 40C39.1216 40.5019 39.498 40.8783 40 40.8783ZM39.9686 64.28C49.0037 64.28 55.78 57.3473 55.78 48.8148C55.78 45.3955 54.682 41.5057 53.4898 40.0627C53.2075 39.7176 52.8938 39.4667 52.4232 39.4667C51.7016 39.4667 51.1683 40 51.1683 40.7215C51.1683 40.9411 51.2624 41.2234 51.3566 41.3802C51.6389 41.788 51.1683 42.0704 50.9487 41.6939C50.7605 41.3802 50.3213 41.0665 49.8193 41.0665C49.1605 41.0665 48.6272 41.6312 48.6272 42.2586C48.6285 42.5011 48.6934 42.7391 48.8154 42.9487C49.1292 43.4506 48.6272 43.6388 48.439 43.3251C48.188 42.9173 47.7488 42.6664 47.3096 42.6664C46.9851 42.6664 46.6739 42.7953 46.4444 43.0247C46.215 43.2541 46.0861 43.5653 46.0861 43.8898C46.0861 44.1094 46.1488 44.3603 46.243 44.5172C46.9331 45.7406 47.2468 46.9954 47.2468 48.407C47.2468 52.8928 44.141 56.1239 40 56.1239C36.6118 56.1239 33.9138 53.9594 33.0354 50.7597L24.9101 53.3947C26.8866 59.8569 32.7217 64.28 39.9686 64.28Z' fill='white'/%3E %3C/svg%3E") no-repeat center center;background-size:contain;margin-bottom:16px}.gdpr-modal__header-site-name{font-size:26px;margin-bottom:8px}@media only screen and (min-width: 824px){.gdpr-modal__header-site-name{font-size:26px}}@media only screen and (max-width: 667px)and (orientation: landscape){.gdpr-modal__header-site-name{display:inline-block}}.gdpr-modal__header-site-name::first-letter{text-transform:uppercase}.gdpr-modal__header-org-name{font-size:16px}@media only screen and (min-width: 824px){.gdpr-modal__header-org-name{font-size:16px}}@media only screen and (max-width: 667px)and (orientation: landscape){.gdpr-modal__header-org-name{font-size:16px;display:inline-block}}.gdpr-modal__infobox-section{text-align:left;margin-bottom:32px}.gdpr-modal__infobox-section-inner{margin-bottom:16px}.gdpr-modal__infobox-header{margin:0 0 8px 0;font-size:16px;font-weight:bold;line-height:1.2}@media only screen and (min-width: 824px){.gdpr-modal__infobox-header{font-size:16px}}.gdpr-modal__infobox-text{margin:0}@media only screen and (min-width: 824px){.gdpr-modal__infobox-text{margin-bottom:16px;font-size:16px}}.gdpr-modal__link-wrapper{margin-bottom:40px}.gdpr-modal__link,.gdpr-modal__link:focus,.gdpr-modal__link:visited,.gdpr-modal__link:active{color:#061a57;margin-bottom:16px;text-decoration:none;display:contents}@media only screen and (min-width: 824px){.gdpr-modal__link,.gdpr-modal__link:focus,.gdpr-modal__link:visited,.gdpr-modal__link:active{font-size:16px}}@media only screen and (max-width: 667px)and (orientation: landscape){.gdpr-modal__link,.gdpr-modal__link:focus,.gdpr-modal__link:visited,.gdpr-modal__link:active{margin-bottom:16px}}.gdpr-modal__link span:first-of-type,.gdpr-modal__link:focus span:first-of-type,.gdpr-modal__link:visited span:first-of-type,.gdpr-modal__link:active span:first-of-type{display:inline;word-break:break-all;text-decoration:underline}@media only screen and (min-width: 824px){#gdpr-modal__link-settings{margin-bottom:24px}}.gdpr-modal__advertiser{display:flex;flex-direction:column;gap:8px}@media only screen and (min-width: 824px){.gdpr-modal__advertiser{padding-bottom:16px;font-size:16px}}.gdpr-modal__advertiser-header{font-size:16px;font-weight:bold;margin:0}@media only screen and (min-width: 824px){.gdpr-modal__advertiser-header{font-size:16px}}.gdpr-modal__advertiser-creativeId,.gdpr-modal__advertiser-advertiser{display:flex;justify-content:space-between;flex-direction:column;gap:4px;margin-top:0}@media only screen and (min-width: 824px){.gdpr-modal__advertiser-creativeId,.gdpr-modal__advertiser-advertiser{flex-direction:row}}.gdpr-modal__advertiser-creativeId>span,.gdpr-modal__advertiser-advertiser>span{flex:1 1 0px}.gdpr-modal__advertiser-creativeId>span:nth-of-type(2),.gdpr-modal__advertiser-advertiser>span:nth-of-type(2){font-weight:bold}@media only screen and (min-width: 824px){.gdpr-modal__advertiser-creativeId>span:nth-of-type(2),.gdpr-modal__advertiser-advertiser>span:nth-of-type(2){text-align:right}}.gdpr-modal__buttons-section{width:100%;margin:0}@media only screen and (min-width: 824px){.gdpr-modal__buttons-section{margin:auto;width:fit-content}}@media only screen and (max-width: 667px)and (orientation: landscape){.gdpr-modal__buttons-section{width:fit-content;margin:0 auto}}.gdpr-modal__buttons-section>div[role=button]{font-size:15px;font-weight:bold;line-height:48px;text-align:center;border-radius:24px;padding:0 16px;cursor:pointer}@media only screen and (max-width: 667px)and (orientation: landscape){.gdpr-modal__buttons-section>div[role=button]{display:inline-block}}@media only screen and (min-width: 824px){.gdpr-modal__buttons-section>div[role=button]{font-size:16px;display:inline-block;width:auto}}.gdpr-modal__buttons-section .gdpr-modal__hide-ads{background:#fff;color:#061a57;border:2px solid #061a57}.gdpr-modal__buttons-section .gdpr-modal__hide-ads .gdpr-modal__eye-icon{display:inline-block;position:relative;top:8px;margin-left:8px;width:24px;height:24px;background:url("data:image/svg+xml,%3Csvg width='22' height='20' viewBox='0 0 22 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M15.1 10.3L13.65 8.85C13.8 8.06667 13.575 7.33333 12.975 6.65C12.375 5.96667 11.6 5.7 10.65 5.85L9.2 4.4C9.48333 4.26667 9.76667 4.16667 10.05 4.1C10.35 4.03333 10.6667 4 11 4C12.25 4 13.3083 4.44167 14.175 5.325C15.0583 6.19167 15.5 7.25 15.5 8.5C15.5 8.83333 15.4667 9.15 15.4 9.45C15.3333 9.73333 15.2333 10.0167 15.1 10.3ZM18.3 13.45L16.85 12.05C17.4833 11.5667 18.0417 11.0417 18.525 10.475C19.025 9.89167 19.45 9.23333 19.8 8.5C18.9667 6.81667 17.7667 5.48333 16.2 4.5C14.65 3.5 12.9167 3 11 3C10.5167 3 10.0417 3.03333 9.575 3.1C9.10833 3.16667 8.65 3.26667 8.2 3.4L6.65 1.85C7.33333 1.56667 8.03333 1.35833 8.75 1.225C9.46667 1.075 10.2167 0.999999 11 0.999999C13.3833 0.999999 15.525 1.63333 17.425 2.9C19.325 4.15 20.75 5.78333 21.7 7.8C21.75 7.88333 21.7833 7.99167 21.8 8.125C21.8167 8.24167 21.825 8.36667 21.825 8.5C21.825 8.63333 21.8083 8.76667 21.775 8.9C21.7583 9.01667 21.7333 9.11667 21.7 9.2C21.3167 10.05 20.8333 10.8333 20.25 11.55C19.6833 12.2667 19.0333 12.9 18.3 13.45ZM18.1 18.9L14.6 15.45C14.0167 15.6333 13.425 15.775 12.825 15.875C12.2417 15.9583 11.6333 16 11 16C8.61667 16 6.475 15.375 4.575 14.125C2.675 12.8583 1.25 11.2167 0.3 9.2C0.25 9.11667 0.216667 9.01667 0.2 8.9C0.183333 8.76667 0.175 8.63333 0.175 8.5C0.175 8.36667 0.183333 8.24167 0.2 8.125C0.216667 8.00833 0.25 7.90833 0.3 7.825C0.65 7.075 1.06667 6.38333 1.55 5.75C2.03333 5.11667 2.56667 4.53333 3.15 4L1.075 1.9C0.891667 1.71667 0.8 1.49167 0.8 1.225C0.8 0.941666 0.9 0.699999 1.1 0.5C1.28333 0.316666 1.51667 0.224999 1.8 0.224999C2.08333 0.224999 2.31667 0.316666 2.5 0.5L19.5 17.5C19.6833 17.6833 19.775 17.9167 19.775 18.2C19.7917 18.4667 19.7 18.7 19.5 18.9C19.3167 19.0833 19.0833 19.175 18.8 19.175C18.5167 19.175 18.2833 19.0833 18.1 18.9ZM4.55 5.4C4.06667 5.83333 3.625 6.30833 3.225 6.825C2.825 7.34167 2.48333 7.9 2.2 8.5C3.03333 10.1833 4.225 11.525 5.775 12.525C7.34167 13.5083 9.08333 14 11 14C11.3333 14 11.6583 13.9833 11.975 13.95C12.2917 13.9 12.6167 13.85 12.95 13.8L12.05 12.85C11.8667 12.9 11.6917 12.9417 11.525 12.975C11.3583 12.9917 11.1833 13 11 13C9.75 13 8.68333 12.5667 7.8 11.7C6.93333 10.8167 6.5 9.75 6.5 8.5C6.5 8.31667 6.50833 8.14167 6.525 7.975C6.55833 7.80833 6.6 7.63333 6.65 7.45L4.55 5.4Z' fill='%23061A57'/%3E %3C/svg%3E") no-repeat;background-size:contain}.gdpr-modal__buttons-section .gdpr-modal__close-button{background:#061a57;color:#fff;margin-bottom:16px}@media only screen and (min-width: 824px){.gdpr-modal__buttons-section .gdpr-modal__close-button{margin-bottom:0;margin-right:16px}}</style><style>.gdpr-cogwheel-button{height:26px;width:26px;position:absolute;cursor:pointer}.gdpr-cogwheel-button__predefined-element{position:absolute;top:0;left:0}.gdpr-cogwheel-button__friendly-iframe{position:absolute;top:0;left:0;z-index:1000;background-color:hsla(0,0%,100%,.75);border-bottom-right-radius:13px}.gdpr-cogwheel-button__icon{pointer-events:none;height:15px;width:15px;position:absolute;top:5px;left:5px;background-repeat:no-repeat;line-height:15px}</style>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+          
+          <meta name="nmp:tracking:aurora" content="1"><meta name="nmp:tracking:brand" content="dba"><meta name="nmp:tracking:app-name" content="recommerce-item-page"><meta property="mbl:login" content="0">
+          <title>Batavus el- cykel , herre model | DBA</title>
+          <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon-t-32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon-t-192x192.png" sizes="192x192">
+    <link rel="icon" href="/favicon-t-96x96.png" sizes="96x96">
+    <link rel="icon" href="/favicon-t-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+    <meta name="msapplication-TileColor" content="#06befb">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+          
+          
+          
+          <link rel="canonical" href="https://www.dba.dk/recommerce/forsale/item/8947725">
+          <meta name="description" content="Meget velholdt Batavus el-cykel i herre model til salg. 
+Kun brugt få gange i sommer halvåret og stået indendørs om vinteren. 
+Der medfølger fodpumpe, cykelhjelm, og cykel taske. 
+Kvittering haves. 
+Cykel skal afhentes i Slagelse. 
+
+Model: Batavus Stratos E-go 400 w
+Størrelse: 57 cm
+Farve: Mat sort
+Gear: 7 indvendige gear
+Købt i 2017.">
+          <meta property="og:site_name" content="DBA.dk">
+          <meta property="og:type" content="website">
+          <meta property="og:image" content="https://images.dbastatic.dk/dynamic/1280w/94/94654221-f96c-4e57-9fcd-46bb6e9adbb8">
+          <meta property="og:image:width" content="1600">
+          <meta property="og:image:height" content="1200">
+          <meta property="og:title" content="Batavus el- cykel , herre model | DBA">
+          <meta property="og:description" content="Meget velholdt Batavus el-cykel i herre model til salg. 
+Kun brugt få gange i sommer halvåret og stået indendørs om vinteren. 
+Der medfølger fodpumpe, cykelhjelm, og cykel taske. 
+Kvittering haves. 
+Cykel skal afhentes i Slagelse. 
+
+Model: Batavus Stratos E-go 400 w
+Størrelse: 57 cm
+Farve: Mat sort
+Gear: 7 indvendige gear
+Købt i 2017.">
+          <meta property="og:url" content="https://www.dba.dk/recommerce/forsale/item/8947725">
+          <meta property="og:locale" content="da">
+          
+          
+          <link rel="preload" href="https://assets.finn.no/pkg/@warp-ds/fonts/v1/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+          <link rel="preload" href="https://assets.finn.no/pkg/@warp-ds/fonts/v1/ProximaNova-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+          <link rel="stylesheet" href="https://assets.dba.dk/pkg/@warp-ds/fonts/v1/dba-dk.css">
+          <link rel="stylesheet" href="https://assets.dba.dk/pkg/@warp-ds/css/v2/tokens/dba-dk.css">
+          <link rel="stylesheet" href="https://assets.dba.dk/pkg/@warp-ds/css/v2/resets.css">
+          <link rel="stylesheet" href="https://assets.dba.dk/pkg/@warp-ds/css/v2/components.css">
+          
+          <link href="https://assets.dba.dk/pkg/recommerce-item-page/1.0.1379/assets/entry.css" media="all" type="text/css" rel="stylesheet">
+          <link href="https://assets.dba.dk/pkg/advertising-podlet/0.0.984/client/index.css" media="all" type="text/css" rel="stylesheet">
+          <script async="" src="//sdk-cdn.pulse.m10s.io/versioned/3.3.2/pulse.min.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MBD7PRZX"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MBD7PRZX');</script>
+      
+          <link href="https://static.finncdn.no/_c/common-browserbundle/v5.0.0/main.min.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/recommerce-item-page/1.0.1379/entry.client.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/advertising-podlet/0.0.984/client/client.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/broadcast-podlet/1.0.41/main.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/footer/1.1.169/footer.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/topbar/1.0.397/header.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/login-refresh/1.0.91/esm.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/contact-button-podlet/1.0.111/index.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.finn.no/pkg/tjt-podlet-create-offer-button/1.0.476/browser/client-entry.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/recommerce-recommendations-podlet/0.0.214/entry.client.js" crossorigin="" as="script" rel="preload">
+          <link href="https://assets.dba.dk/pkg/recommerce-suggestions-podlet/0.0.94/entry.client.js" crossorigin="" as="script" rel="preload">
+          
+          <script src="https://assets.finn.no/npm/@lit-labs/ssr-client/v1/lit-element-hydrate-support.js" type="module" crossorigin="" defer=""></script>
+          
+          
+        <link rel="alternate" hreflang="da" href="https://www.dba.dk/recommerce/forsale/item/8947725">
+        
+        
+    
+      <script>"use strict";function _typeof(t){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}!function(){var t=function(){var t,e,o=[],n=window,r=n;for(;r;){try{if(r.frames.__tcfapiLocator){t=r;break}}catch(t){}if(r===n.top)break;r=r.parent}t||(!function t(){var e=n.document,o=!!n.frames.__tcfapiLocator;if(!o)if(e.body){var r=e.createElement("iframe");r.style.cssText="display:none",r.name="__tcfapiLocator",e.body.appendChild(r)}else setTimeout(t,5);return!o}(),n.__tcfapi=function(){for(var t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];if(!n.length)return o;"setGdprApplies"===n[0]?n.length>3&&2===parseInt(n[1],10)&&"boolean"==typeof n[3]&&(e=n[3],"function"==typeof n[2]&&n[2]("set",!0)):"ping"===n[0]?"function"==typeof n[2]&&n[2]({gdprApplies:e,cmpLoaded:!1,cmpStatus:"stub"}):o.push(n)},n.addEventListener("message",(function(t){var e="string"==typeof t.data,o={};if(e)try{o=JSON.parse(t.data)}catch(t){}else o=t.data;var n="object"===_typeof(o)&&null!==o?o.__tcfapiCall:null;n&&window.__tcfapi(n.command,n.version,(function(o,r){var a={__tcfapiReturn:{returnValue:o,success:r,callId:n.callId}};t&&t.source&&t.source.postMessage&&t.source.postMessage(e?JSON.stringify(a):a,"*")}),n.parameter)}),!1))};"undefined"!=typeof module?module.exports=t:t()}();</script><script async="" type="module" src="https://static.pro.cmp.m10s.io/dist/index.js" fetchpriority="low"></script><script>"use strict";function _typeof(t){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}!function(){var t=function(){var t,e,o=[],n=window,r=n;for(;r;){try{if(r.frames.__tcfapiLocator){t=r;break}}catch(t){}if(r===n.top)break;r=r.parent}t||(!function t(){var e=n.document,o=!!n.frames.__tcfapiLocator;if(!o)if(e.body){var r=e.createElement("iframe");r.style.cssText="display:none",r.name="__tcfapiLocator",e.body.appendChild(r)}else setTimeout(t,5);return!o}(),n.__tcfapi=function(){for(var t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];if(!n.length)return o;"setGdprApplies"===n[0]?n.length>3&&2===parseInt(n[1],10)&&"boolean"==typeof n[3]&&(e=n[3],"function"==typeof n[2]&&n[2]("set",!0)):"ping"===n[0]?"function"==typeof n[2]&&n[2]({gdprApplies:e,cmpLoaded:!1,cmpStatus:"stub"}):o.push(n)},n.addEventListener("message",(function(t){var e="string"==typeof t.data,o={};if(e)try{o=JSON.parse(t.data)}catch(t){}else o=t.data;var n="object"===_typeof(o)&&null!==o?o.__tcfapiCall:null;n&&window.__tcfapi(n.command,n.version,(function(o,r){var a={__tcfapiReturn:{returnValue:o,success:r,callId:n.callId}};t&&t.source&&t.source.postMessage&&t.source.postMessage(e?JSON.stringify(a):a,"*")}),n.parameter)}),!1))};"undefined"!=typeof module?module.exports=t:t()}();</script><link rel="preload" as="script" href="https://cmpv2.dba.dk/unified/wrapperMessagingWithoutDetection.js"><script type="module" src="https://log.medietall.no/analytics.v2.js"></script><script charset="utf-8" src="https://cmpv2.dba.dk/unified/4.31.1/custom.ca802a385889c6757596.bundle.js"></script><script charset="utf-8" src="https://cmpv2.dba.dk/unified/4.31.1/gdpr-tcf.fd8d93fe83dcddd505ef.bundle.js"></script><style type="text/css">#sp_message_iframe_1274320 { display:block; width: 100%; height: 100%; border: 0 none; } #sp_message_container_1274320 { overflow:auto;-webkit-overflow-scrolling:touch; display: none; position: fixed; z-index: 2147483647; left: 0; right: 0; bottom: 0; top: 0; height: 100%; width: 100%; max-width: 100%; max-height: 100vh;}.sp-message-open { height: 100vh !important; width: 100vw !important } .sp-message-open body { overflow: hidden !important; position: fixed !important; margin-top: 0px !important; top: 0px !important; left: 0px !important; right: 0px !important; }</style><script src="https://cogwheel.inventory.schibsted.io/prod/latest/gdpr-bundle.js" type="text/javascript" async="" defer=""></script><script src="https://macro.adnami.io/macro/spec/adsm.macro.d1be15b8-7ada-45b8-81b7-e2dc40458ca4.js" type="text/javascript" async=""></script><script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" type="text/javascript" async="" defer=""></script><script src="https://schibsteddk-cdn.relevant-digital.com/static/tags/6746e535ae5f9061736e078f.js" type="text/javascript" async=""></script><script src="https://cdn.adnuntius.com/adn.js" type="text/javascript" async="" defer=""></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202504080101/pubads_impl.js" async=""></script><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202504100101/gpt" rel="compression-dictionary"></head>
+      <body style="touch-action: none; overflow: hidden;">
+          <noscript inert=""><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBD7PRZX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          
+        <podium-layout inert="">
+            
+            <div slot="advertising">
+      
+  <script id="advertising-initial-state" type="application/json">
+    {
+  "env": "prod",
+  "logSessionId": "b8c05d7a-dc71-44a1-b32c-a09acdeb46ee",
+  "unleashFeatures": {
+    "killswitch": {
+      "feature": "killswitch",
+      "id": "advertising-podlet.killswitch",
+      "abtest": false,
+      "enabled": false
+    },
+    "disableAfsPlacements": {
+      "feature": "disableAfsPlacements",
+      "id": "advertising-podlet.disableAfsPlacements",
+      "abtest": false,
+      "enabled": false
+    },
+    "enableGam": {
+      "feature": "enableGam",
+      "id": "advertising-podlet.enableGam",
+      "abtest": false,
+      "enabled": true
+    },
+    "enableGamTestCampaign": {
+      "feature": "enableGamTestCampaign",
+      "id": "advertising-podlet.enableGamTestCampaign",
+      "abtest": false,
+      "enabled": false
+    },
+    "enableAdnTestCampaign": {
+      "feature": "enableAdnTestCampaign",
+      "id": "advertising-podlet.enableAdnTestCampaign",
+      "abtest": false,
+      "enabled": false
+    },
+    "enableAdnuntius": {
+      "feature": "enableAdnuntius",
+      "id": "advertising-podlet.enableAdnuntius",
+      "abtest": false,
+      "enabled": true
+    },
+    "disableAdvertisingConfigApi": {
+      "feature": "disableAdvertisingConfigApi",
+      "id": "advertising-podlet.disableAdvertisingConfigApi",
+      "abtest": false,
+      "enabled": false
+    },
+    "enableGamPrebid": {
+      "feature": "enableGamPrebid",
+      "id": "advertising-podlet.enableGamPrebid",
+      "abtest": false,
+      "enabled": true
+    },
+    "enableBrandMetricsScript": {
+      "feature": "enableBrandMetricsScript",
+      "id": "advertising-podlet.enableBrandMetricsScript",
+      "abtest": false,
+      "enabled": false
+    },
+    "enableGamLazyLoading": {
+      "feature": "enableGamLazyLoading",
+      "id": "advertising-podlet.enableGamLazyLoading",
+      "abtest": false,
+      "enabled": false
+    },
+    "overrideAfsPubId": {
+      "feature": "overrideAfsPubId",
+      "id": "advertising-podlet.overrideAfsPubId",
+      "abtest": false,
+      "enabled": false
+    },
+    "enableInhouseHighImpactBanners": {
+      "feature": "enableInhouseHighImpactBanners",
+      "id": "advertising-podlet.enableInhouseHighImpactBanners",
+      "abtest": false,
+      "enabled": true
+    }
+  },
+  "amplitudeExperiments": {
+    "experiments": {},
+    "payloads": {}
+  },
+  "baseUrl": "https://www.dba.dk/recommerce-item-page/podium-resource/advertising",
+  "config": {
+    "brand": "dba",
+    "deviceType": "desktop",
+    "vertical": "recommerce",
+    "pageType": "object",
+    "subvertical": null,
+    "adServer": {
+      "afs": null,
+      "gam": {
+        "networkId": "18031432",
+        "targeting": [
+          {
+            "key": "consent",
+            "value": [
+              "0"
+            ]
+          },
+          {
+            "key": "price",
+            "value": [
+              "6000"
+            ]
+          },
+          {
+            "key": "county",
+            "value": [
+              "200003"
+            ]
+          },
+          {
+            "key": "images",
+            "value": [
+              "94/94654221-f96c-4e57-9fcd-46bb6e9adbb8",
+              "02/02f3f29b-5dc0-4074-89d7-5efe75a5defa"
+            ]
+          },
+          {
+            "key": "zipcode",
+            "value": [
+              "4200"
+            ]
+          },
+          {
+            "key": "vertical",
+            "value": [
+              "recommerce"
+            ]
+          },
+          {
+            "key": "price_range",
+            "value": [
+              "5001-10000"
+            ]
+          },
+          {
+            "key": "recom_cat_1",
+            "value": [
+              "69"
+            ]
+          },
+          {
+            "key": "recom_cat_2",
+            "value": [
+              "69.3963"
+            ]
+          },
+          {
+            "key": "recom_cat_3",
+            "value": [
+              "69.3963.257"
+            ]
+          },
+          {
+            "key": "municipality",
+            "value": [
+              "214200"
+            ]
+          },
+          {
+            "key": "dealer_segment",
+            "value": [
+              "1"
+            ]
+          },
+          {
+            "key": "device",
+            "value": [
+              "desktop"
+            ]
+          },
+          {
+            "key": "page",
+            "value": [
+              "object"
+            ]
+          }
+        ],
+        "adUnitName": "dba-recommerce",
+        "contentUrl": "https://dba.dk"
+      },
+      "adn": {
+        "kv": {
+          "device": [
+            "desktop"
+          ],
+          "page": [
+            "object"
+          ],
+          "vertical": [
+            "recommerce"
+          ],
+          "consent": [
+            "0"
+          ],
+          "price": [
+            "6000"
+          ],
+          "county": [
+            "200003"
+          ],
+          "images": [
+            "94/94654221-f96c-4e57-9fcd-46bb6e9adbb8",
+            "02/02f3f29b-5dc0-4074-89d7-5efe75a5defa"
+          ],
+          "zipcode": [
+            "4200"
+          ],
+          "price_range": [
+            "5001-10000"
+          ],
+          "recom_cat_1": [
+            "69"
+          ],
+          "recom_cat_2": [
+            "69.3963"
+          ],
+          "recom_cat_3": [
+            "69.3963.257"
+          ],
+          "municipality": [
+            "214200"
+          ],
+          "dealer_segment": [
+            "1"
+          ]
+        }
+      }
+    },
+    "placements": [
+      {
+        "adServer": {
+          "type": "adn",
+          "config": {
+            "auId": "3af66c",
+            "sizes": [
+              [
+                970,
+                170
+              ],
+              [
+                930,
+                180
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "targetId": "advt_top_1"
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_top_1"
+      },
+      {
+        "adServer": {
+          "type": "adn",
+          "config": {
+            "auId": "3af66d",
+            "sizes": [
+              [
+                300,
+                600
+              ],
+              [
+                160,
+                601
+              ],
+              [
+                160,
+                600
+              ]
+            ],
+            "targetId": "advt_left_1"
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_left_1"
+      },
+      {
+        "adServer": {
+          "type": "adn",
+          "config": {
+            "auId": "3af66e",
+            "sizes": [
+              [
+                300,
+                600
+              ],
+              [
+                160,
+                602
+              ],
+              [
+                160,
+                600
+              ]
+            ],
+            "targetId": "advt_right_1"
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_right_1"
+      },
+      {
+        "adServer": {
+          "type": "adn",
+          "config": {
+            "auId": "3af66f",
+            "sizes": [
+              [
+                1,
+                1
+              ]
+            ],
+            "targetId": "advt_wallpaper"
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_wallpaper"
+      },
+      {
+        "adServer": {
+          "type": "gam",
+          "config": {
+            "path": "/18031432/dba-recommerce/wde/object/audience",
+            "mediaTypes": [
+              {
+                "type": "display",
+                "width": 1,
+                "height": 11
+              }
+            ]
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_audience"
+      },
+      {
+        "adServer": {
+          "type": "gam",
+          "config": {
+            "path": "/18031432/dba-recommerce/wde/object/financing_1",
+            "mediaTypes": [
+              {
+                "type": "display",
+                "width": 600,
+                "height": 96
+              }
+            ]
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_financing_1"
+      },
+      {
+        "adServer": {
+          "type": "gam",
+          "config": {
+            "path": "/18031432/dba-recommerce/wde/object/left_1",
+            "mediaTypes": [
+              {
+                "type": "display",
+                "width": 160,
+                "height": 600
+              },
+              {
+                "type": "display",
+                "width": 160,
+                "height": 601
+              },
+              {
+                "type": "display",
+                "width": 300,
+                "height": 600
+              }
+            ],
+            "sizeMappings": [
+              {
+                "sizes": [
+                  [
+                    300,
+                    600
+                  ],
+                  [
+                    160,
+                    601
+                  ],
+                  [
+                    160,
+                    600
+                  ]
+                ],
+                "breakpoint": [
+                  1585,
+                  0
+                ]
+              },
+              {
+                "sizes": [
+                  [
+                    160,
+                    601
+                  ],
+                  [
+                    160,
+                    600
+                  ]
+                ],
+                "breakpoint": [
+                  1300,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_left_1"
+      },
+      {
+        "adServer": {
+          "type": "gam",
+          "config": {
+            "path": "/18031432/dba-recommerce/wde/object/right_1",
+            "mediaTypes": [
+              {
+                "type": "display",
+                "width": 160,
+                "height": 600
+              },
+              {
+                "type": "display",
+                "width": 160,
+                "height": 602
+              },
+              {
+                "type": "display",
+                "width": 300,
+                "height": 600
+              }
+            ],
+            "sizeMappings": [
+              {
+                "sizes": [
+                  [
+                    300,
+                    600
+                  ],
+                  [
+                    160,
+                    602
+                  ],
+                  [
+                    160,
+                    600
+                  ]
+                ],
+                "breakpoint": [
+                  1585,
+                  0
+                ]
+              },
+              {
+                "sizes": [
+                  [
+                    160,
+                    602
+                  ],
+                  [
+                    160,
+                    600
+                  ]
+                ],
+                "breakpoint": [
+                  1165,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_right_1"
+      },
+      {
+        "adServer": {
+          "type": "gam",
+          "config": {
+            "path": "/18031432/dba-recommerce/wde/object/top_1",
+            "mediaTypes": [
+              {
+                "type": "display",
+                "width": 930,
+                "height": 180
+              },
+              {
+                "type": "display",
+                "width": 970,
+                "height": 170
+              },
+              {
+                "type": "display",
+                "width": 1,
+                "height": 2
+              },
+              {
+                "type": "native"
+              }
+            ]
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_top_1"
+      },
+      {
+        "adServer": {
+          "type": "gam",
+          "config": {
+            "path": "/18031432/dba-recommerce/wde/object/wallpaper",
+            "mediaTypes": [
+              {
+                "type": "display",
+                "width": 1,
+                "height": 1
+              }
+            ]
+          }
+        },
+        "intermingle": {
+          "grid": null,
+          "list": null
+        },
+        "placementId": "advt_wallpaper"
+      }
+    ],
+    "consent": "rejected",
+    "searchKey": "SEARCH_ID_BAP_COMMON"
+  },
+  "locale": "da"
+}
+  </script>
+      <script async="async" src="https://www.google.com/adsense/search/ads.js"></script>
+          <script type="text/javascript" charset="utf-8">
+            (function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
+              arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
+          </script>
+
+      
+  <!-- Keep this up here because it will be fixed, and should not have a relative parent. This DIV is styled from a GAM Wallpaper Creative and does not need to exist here.
+  It will be created by the Creative if it doesn't exist. However, it is nice to have it here for understanding what it does -->
+  <div id="wallpaper-container"></div>
+
+  <div class="banners page-container" style="background-color: transparent;">
+
+  <advt-component placementid="advt_audience">
+    <div id="advt_audience--container" slot="advt_audience--slot"></div>
+  </advt-component>
+
+
+
+    <div class="banners__wallpaper">
+      
+  <advt-component placementid="advt_wallpaper">
+    <div id="advt_wallpaper--container" slot="advt_wallpaper--slot"></div>
+  </advt-component>
+
+    </div>
+
+    <div class="banners__left">
+      <div class="banners__sticky-container">
+
+        <div class="banners__sticky--1">
+          <div class="banners__skyscraper">
+            
+  <advt-component placementid="advt_left_1">
+    <div id="advt_left_1--container" slot="advt_left_1--slot"></div>
+  </advt-component>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div id="banner-top-container" style="min-height: 180px;" class="banners__top">
+      
+  <advt-component placementid="advt_top_1">
+    <div id="advt_top_1--container" slot="advt_top_1--slot"></div>
+  </advt-component>
+
+    </div>
+
+    <div class="banners__right">
+      <div class="banners__sticky-container">
+
+        <div class="banners__sticky--1">
+          <div class="banners__skyscraper">
+              
+  <advt-component placementid="advt_right_1">
+    <div id="advt_right_1--container" slot="advt_right_1--slot"></div>
+  </advt-component>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <advt-dev-tool></advt-dev-tool>
+    </div><div slot="broadcast">
+<style>broadcast-podlet-isolated:not(:defined) > template[shadowrootmode] ~ *  {opacity:0;visibility:hidden;}</style>
+<broadcast-podlet-isolated>
+  
+</broadcast-podlet-isolated>
+<script>(()=>{function e(d){HTMLTemplateElement.prototype.hasOwnProperty("shadowRootMode")||d.querySelectorAll("template[shadowrootmode]").forEach(o=>{let n=o.getAttribute("shadowrootmode"),s=o.hasAttribute("shadowrootdelegatesfocus"),t=o.parentNode.attachShadow({mode:n,delegatesFocus:s});t.appendChild(o.content),o.remove(),e(t)})}var r;(r=document.currentScript)!=null&&r.previousElementSibling&&e(document.currentScript.previousElementSibling);})();
+</script></div><div slot="consent"><script defer="" src="/sourcepoint/v5.js"></script></div><div slot="footer"><!--lit-part TDROnuXNr4I=--><!--lit-node 0--><finn-footer></finn-footer><!--/lit-part--></div><div slot="header">
+        <!-- FINN HEADER (VERSION: github-action-job-4060424-159-1) -->
+        <style>html { font-size: 62.5%; }</style>
+        <!--lit-part nBNn7HHDiPM=--><!--lit-node 0--><link rel="stylesheet" href="https://assets.dba.dk/pkg/@warp-ds/fonts/v1/dba-dk.css">
+                <!--lit-node 1--><link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/dba-dk.css">
+                <script src="https://assets.finn.no/npm/@lit-labs/ssr-client/v1/lit-element-hydrate-support.js" type="module" crossorigin=""></script>
+                <span>
+                    <!--lit-node 4--><finn-topbar active-menu-item="NONE" sites="//www.dba.dk" locale="da" translations="{&quot;onboarding.dialog.content.first-screen.image.alttext.tori&quot;:[&quot;En rød cirkel med ordene \&quot;ToriDiili - sikker betaling, problemfri levering\&quot;.&quot;],&quot;onboarding.dialog.content.third-screen.image.alttext.tori&quot;:[&quot;En smartphone, der viser overskriften \&quot;Tilbyd ToriDiili - Toris nye fragt- og betalingsservice\&quot;. En pil peger på den pakkestørrelse, som sælgeren skal vælge for fragt.&quot;],&quot;onboarding.dialog.content.second-screen.image.alttext.tori&quot;:[&quot;En smartphone viser en Tori-annonce og en knap med teksten \&quot;Byd på ToriDiili\&quot;.&quot;],&quot;onboarding.dialog.button.back&quot;:[&quot;Tilbage&quot;],&quot;onboarding.dialog.content.second-screen.text.dba&quot;:[&quot;Du kan nu se andres bedømmelser af brugeren, du handler med, før du køber eller sælger.&quot;],&quot;onboarding.dialog.header.close-button.area-label&quot;:[&quot;Luk&quot;],&quot;onboarding.dialog.header.close-icon.title&quot;:[&quot;Kryds&quot;],&quot;onboarding.dialog.content.first-screen.text.dba&quot;:[&quot;DBA har fået nye funktioner, der gør det nemmere at handle brugt. Ved at fortsætte accepterer jeg DBA's&quot;],&quot;onboarding.dialog.content.first-screen.image.alttext.dba&quot;:[&quot;DBA-logo i forbindelse med lancering af ny platform&quot;],&quot;onboarding.dialog.button.discover-dba&quot;:[&quot;Opdag det nye DBA&quot;],&quot;browser-warning.broadcast.dismiss.aria-label&quot;:[&quot;Afvis&quot;],&quot;onboarding.dialog.content.fourth-screen.title.dba&quot;:[&quot;Sælg uden småsnak&quot;],&quot;onboarding.dialog.content.fourth-screen.image.alttext.dba&quot;:[&quot;Nemme og sikre handler med DBA. Eksempel på fragtmuligheder baseret på varens størrelse for sælgere.&quot;],&quot;onboarding.dialog.content.fourth-screen.title.tori&quot;:[&quot;Alle salg på ToriDiili inkluderer købsbeskyttelse&quot;],&quot;onboarding.dialog.content.second-screen.text.tori&quot;:[&quot;Find skjulte skatte over hele Finland med få klik! Du kan genkende annoncerne fra tjenesten på ToriDiili-logoet.&quot;],&quot;topbar.callout-wrapper-favorites.text&quot;:[&quot;Find dine favoritter her&quot;],&quot;onboarding.dialog.button.finish&quot;:[&quot;Gennemfør&quot;],&quot;browser-warning.broadcast.content.expiration&quot;:[&quot;Fra den 1. januar 2021 vil du måske ikke længere kunne bruge DBA, da vi stopper supporten til gamle browsere&quot;],&quot;topbar.header.frontpage.link.aria-label&quot;:[&quot;Forside&quot;],&quot;browser-warning.broadcast.content.hello&quot;:[&quot;Hovsa, du bruger vist en gammel browserversion ser det ud til! Du skal opdatere din browser, hvis DBA skal kunne fungere korrekt&quot;],&quot;browser-warning.broadcast.aria-label&quot;:[&quot;Vigtig besked&quot;],&quot;onboarding.dialog.content.second-screen.image.alttext.dba&quot;:[&quot;Guide: Sådan tjekker man sine handelsespartneres bedømmelser. Profilkort tilhørende Lisa Andersen, en MitID-valideret bruger med en gennemsnitlig score på 9,2 ud fra 16 bedømmelser.&quot;],&quot;topbar.link.login&quot;:[&quot;Log ind&quot;],&quot;topbar.subtitle&quot;:[&quot;Mulighedernes marked&quot;],&quot;topbar.header.messages.text&quot;:[&quot;Beskeder&quot;],&quot;topbar.link.profile&quot;:[&quot;Min DBA&quot;],&quot;topbar.profile-image.alt&quot;:[&quot;Mit profilbillede&quot;],&quot;topbar.header.new-ad.link&quot;:[&quot;Ny annonce&quot;],&quot;onboarding.dialog.button.next&quot;:[&quot;Næste&quot;],&quot;onboarding.dialog.content.fourth-screen.text.dba&quot;:[&quot;Nu slipper du for at udveksle private oplysninger eller aftale betaling. Det klarer vi for dig.&quot;],&quot;topbar.notifications.link.aria-label&quot;:[&quot;Notifikationer&quot;],&quot;topbar.notifications.link.title&quot;:[&quot;Notifikationer&quot;],&quot;topbar.notifications.link.text&quot;:[&quot;Notifikationer&quot;],&quot;onboarding.dialog.button.remind-me-later&quot;:[&quot;Påmind mig senere&quot;],&quot;onboarding.dialog.content.third-screen.title.tori&quot;:[&quot;Sælg uden beskeder frem og tilbage&quot;],&quot;onboarding.dialog.content.fourth-screen.image.alttext.tori&quot;:[&quot;Sælgers profil i en annonce. Det viser navnet Liisa Andersson, valideret bruger, Tori-bruger siden 2012. Sælgeren har 16 bedømmelser med en gennemsnitlig vurdering på 8,7.&quot;],&quot;onboarding.dialog.content.third-screen.title.dba&quot;:[&quot;Køb som i en webshop&quot;],&quot;onboarding.dialog.content.second-screen.title.tori&quot;:[&quot;Shop som i en webshop&quot;],&quot;onboarding.dialog.content.third-screen.image.alttext.dba&quot;:[&quot;Køb trygt med DBA i hele Danmark. Eksempel på betalingsoversigt, der viser et samlet beløb på 345 kr. med mulighed for betaling med MobilePay.&quot;],&quot;onboarding.dialog.button.take-tour&quot;:[&quot;Få en rundvisning&quot;],&quot;onboarding.dialog.content.first-screen.title.t-and-c-link-text.dba&quot;:[&quot;vilkår&quot;],&quot;onboarding.dialog.content.first-screen.text.tori&quot;:[&quot;Den velkendte og sikre Tori-webshop er nu blevet endnu mere sikker og nem at bruge. For eksempel kan du nu foretage transaktioner gennem Toris egen betalings- og fragtservice ToriDiili.&quot;],&quot;topbar.header.logo.aria-label&quot;:[&quot;DBA-logoet viser navnet DBA skrevet med hvid tekst i et lyseblåt rektangel til højre for en mørkeblå kvart cirkel.&quot;],&quot;onboarding.dialog.content.second-screen.title.dba&quot;:[&quot;Se andres bedømmelser&quot;],&quot;browser-warning.broadcast.content.upgrade&quot;:[&quot;Ønsker du at prøve en helt ny browser? Her er nogle forslag&quot;],&quot;onboarding.dialog.content.first-screen.title.dba&quot;:[&quot;Velkommen til det nye DBA!&quot;],&quot;onboarding.dialog.content.first-screen.title.tori&quot;:[&quot;Velkommen til det nye og forbedrede Tori!&quot;],&quot;onboarding.dialog.content.third-screen.text.tori&quot;:[&quot;Når du sælger dine varer med ToriDiili, behøver du ikke at udveksle kontaktoplysninger eller aftale betaling med køberen - det hele går automatisk gennem Tori!&quot;],&quot;onboarding.dialog.content.third-screen.text.dba&quot;:[&quot;Køb nemt direkte på DBA med fragt og tryg betaling i én løsning med Fiks færdig.&quot;],&quot;onboarding.dialog.content.fourth-screen.text.tori&quot;:[&quot;Du kan se sælgerens vurderinger og profil, før du bestemmer dig for at købe. Takket være køberbeskyttelse udbetales pengene først til sælgeren efter, at du har kontrolleret varen efter levering.&quot;]}" brand="DBA" links="{&quot;newAd&quot;:&quot;/create-item/start&quot;}" show-onboarding="" messaging-unread-count="0"></finn-topbar>
+                    <!--lit-part hCxOnmC0+og=--><!--lit-node 0--><onboarding-modal-entrypoint illustrationbaseurl="https://assets.dba.dk/img/topbar/1.0.5/dba" locale="da" brand="DBA" translations="{&quot;onboarding.dialog.content.first-screen.image.alttext.tori&quot;:[&quot;En rød cirkel med ordene \&quot;ToriDiili - sikker betaling, problemfri levering\&quot;.&quot;],&quot;onboarding.dialog.content.third-screen.image.alttext.tori&quot;:[&quot;En smartphone, der viser overskriften \&quot;Tilbyd ToriDiili - Toris nye fragt- og betalingsservice\&quot;. En pil peger på den pakkestørrelse, som sælgeren skal vælge for fragt.&quot;],&quot;onboarding.dialog.content.second-screen.image.alttext.tori&quot;:[&quot;En smartphone viser en Tori-annonce og en knap med teksten \&quot;Byd på ToriDiili\&quot;.&quot;],&quot;onboarding.dialog.button.back&quot;:[&quot;Tilbage&quot;],&quot;onboarding.dialog.content.second-screen.text.dba&quot;:[&quot;Du kan nu se andres bedømmelser af brugeren, du handler med, før du køber eller sælger.&quot;],&quot;onboarding.dialog.header.close-button.area-label&quot;:[&quot;Luk&quot;],&quot;onboarding.dialog.header.close-icon.title&quot;:[&quot;Kryds&quot;],&quot;onboarding.dialog.content.first-screen.text.dba&quot;:[&quot;DBA har fået nye funktioner, der gør det nemmere at handle brugt. Ved at fortsætte accepterer jeg DBA's&quot;],&quot;onboarding.dialog.content.first-screen.image.alttext.dba&quot;:[&quot;DBA-logo i forbindelse med lancering af ny platform&quot;],&quot;onboarding.dialog.button.discover-dba&quot;:[&quot;Opdag det nye DBA&quot;],&quot;browser-warning.broadcast.dismiss.aria-label&quot;:[&quot;Afvis&quot;],&quot;onboarding.dialog.content.fourth-screen.title.dba&quot;:[&quot;Sælg uden småsnak&quot;],&quot;onboarding.dialog.content.fourth-screen.image.alttext.dba&quot;:[&quot;Nemme og sikre handler med DBA. Eksempel på fragtmuligheder baseret på varens størrelse for sælgere.&quot;],&quot;onboarding.dialog.content.fourth-screen.title.tori&quot;:[&quot;Alle salg på ToriDiili inkluderer købsbeskyttelse&quot;],&quot;onboarding.dialog.content.second-screen.text.tori&quot;:[&quot;Find skjulte skatte over hele Finland med få klik! Du kan genkende annoncerne fra tjenesten på ToriDiili-logoet.&quot;],&quot;topbar.callout-wrapper-favorites.text&quot;:[&quot;Find dine favoritter her&quot;],&quot;onboarding.dialog.button.finish&quot;:[&quot;Gennemfør&quot;],&quot;browser-warning.broadcast.content.expiration&quot;:[&quot;Fra den 1. januar 2021 vil du måske ikke længere kunne bruge DBA, da vi stopper supporten til gamle browsere&quot;],&quot;topbar.header.frontpage.link.aria-label&quot;:[&quot;Forside&quot;],&quot;browser-warning.broadcast.content.hello&quot;:[&quot;Hovsa, du bruger vist en gammel browserversion ser det ud til! Du skal opdatere din browser, hvis DBA skal kunne fungere korrekt&quot;],&quot;browser-warning.broadcast.aria-label&quot;:[&quot;Vigtig besked&quot;],&quot;onboarding.dialog.content.second-screen.image.alttext.dba&quot;:[&quot;Guide: Sådan tjekker man sine handelsespartneres bedømmelser. Profilkort tilhørende Lisa Andersen, en MitID-valideret bruger med en gennemsnitlig score på 9,2 ud fra 16 bedømmelser.&quot;],&quot;topbar.link.login&quot;:[&quot;Log ind&quot;],&quot;topbar.subtitle&quot;:[&quot;Mulighedernes marked&quot;],&quot;topbar.header.messages.text&quot;:[&quot;Beskeder&quot;],&quot;topbar.link.profile&quot;:[&quot;Min DBA&quot;],&quot;topbar.profile-image.alt&quot;:[&quot;Mit profilbillede&quot;],&quot;topbar.header.new-ad.link&quot;:[&quot;Ny annonce&quot;],&quot;onboarding.dialog.button.next&quot;:[&quot;Næste&quot;],&quot;onboarding.dialog.content.fourth-screen.text.dba&quot;:[&quot;Nu slipper du for at udveksle private oplysninger eller aftale betaling. Det klarer vi for dig.&quot;],&quot;topbar.notifications.link.aria-label&quot;:[&quot;Notifikationer&quot;],&quot;topbar.notifications.link.title&quot;:[&quot;Notifikationer&quot;],&quot;topbar.notifications.link.text&quot;:[&quot;Notifikationer&quot;],&quot;onboarding.dialog.button.remind-me-later&quot;:[&quot;Påmind mig senere&quot;],&quot;onboarding.dialog.content.third-screen.title.tori&quot;:[&quot;Sælg uden beskeder frem og tilbage&quot;],&quot;onboarding.dialog.content.fourth-screen.image.alttext.tori&quot;:[&quot;Sælgers profil i en annonce. Det viser navnet Liisa Andersson, valideret bruger, Tori-bruger siden 2012. Sælgeren har 16 bedømmelser med en gennemsnitlig vurdering på 8,7.&quot;],&quot;onboarding.dialog.content.third-screen.title.dba&quot;:[&quot;Køb som i en webshop&quot;],&quot;onboarding.dialog.content.second-screen.title.tori&quot;:[&quot;Shop som i en webshop&quot;],&quot;onboarding.dialog.content.third-screen.image.alttext.dba&quot;:[&quot;Køb trygt med DBA i hele Danmark. Eksempel på betalingsoversigt, der viser et samlet beløb på 345 kr. med mulighed for betaling med MobilePay.&quot;],&quot;onboarding.dialog.button.take-tour&quot;:[&quot;Få en rundvisning&quot;],&quot;onboarding.dialog.content.first-screen.title.t-and-c-link-text.dba&quot;:[&quot;vilkår&quot;],&quot;onboarding.dialog.content.first-screen.text.tori&quot;:[&quot;Den velkendte og sikre Tori-webshop er nu blevet endnu mere sikker og nem at bruge. For eksempel kan du nu foretage transaktioner gennem Toris egen betalings- og fragtservice ToriDiili.&quot;],&quot;topbar.header.logo.aria-label&quot;:[&quot;DBA-logoet viser navnet DBA skrevet med hvid tekst i et lyseblåt rektangel til højre for en mørkeblå kvart cirkel.&quot;],&quot;onboarding.dialog.content.second-screen.title.dba&quot;:[&quot;Se andres bedømmelser&quot;],&quot;browser-warning.broadcast.content.upgrade&quot;:[&quot;Ønsker du at prøve en helt ny browser? Her er nogle forslag&quot;],&quot;onboarding.dialog.content.first-screen.title.dba&quot;:[&quot;Velkommen til det nye DBA!&quot;],&quot;onboarding.dialog.content.first-screen.title.tori&quot;:[&quot;Velkommen til det nye og forbedrede Tori!&quot;],&quot;onboarding.dialog.content.third-screen.text.tori&quot;:[&quot;Når du sælger dine varer med ToriDiili, behøver du ikke at udveksle kontaktoplysninger eller aftale betaling med køberen - det hele går automatisk gennem Tori!&quot;],&quot;onboarding.dialog.content.third-screen.text.dba&quot;:[&quot;Køb nemt direkte på DBA med fragt og tryg betaling i én løsning med Fiks færdig.&quot;],&quot;onboarding.dialog.content.fourth-screen.text.tori&quot;:[&quot;Du kan se sælgerens vurderinger og profil, før du bestemmer dig for at købe. Takket være køberbeskyttelse udbetales pengene først til sælgeren efter, at du har kontrolleret varen efter levering.&quot;]}"></onboarding-modal-entrypoint><!--/lit-part-->
+                </span><!--/lit-part-->
+        <topbar-data-service login-id="" spid-id="" api-url="https://www.dba.dk/recommerce-item-page/podium-resource/header/api"></topbar-data-service>
+        <browser-warning></browser-warning>
+    </div><div slot="loginRefresh"><span id="login-frontend-cookie-cleanup"></span></div><div slot="contactButton">
+        <script id="contact-button-data" type="application/json">
+            {"name":"contact-button-podlet","url":"/auth/login?redirectUrl=https%3A%2F%2Ffinn.no%2F8947725","adId":"8947725","preview":"false","locale":"da","brand":"DBA"}
+        </script>
+        
+    </div><div slot="createOfferButton">
+<style>tjt-podlet-create-offer-button-isolated:not(:defined) > template[shadowrootmode] ~ *  {opacity:0;visibility:hidden;}</style>
+<tjt-podlet-create-offer-button-isolated>
+  
+</tjt-podlet-create-offer-button-isolated>
+<script>(()=>{function e(d){HTMLTemplateElement.prototype.hasOwnProperty("shadowRootMode")||d.querySelectorAll("template[shadowrootmode]").forEach(o=>{let n=o.getAttribute("shadowrootmode"),s=o.hasAttribute("shadowrootdelegatesfocus"),t=o.parentNode.attachShadow({mode:n,delegatesFocus:s});t.appendChild(o.content),o.remove(),e(t)})}var r;(r=document.currentScript)!=null&&r.previousElementSibling&&e(document.currentScript.previousElementSibling);})();
+</script></div><div slot="recommendations">
+<style>recommerce-recommendations-podlet-isolated:not(:defined) > template[shadowrootmode] ~ *  {opacity:0;visibility:hidden;}</style>
+<recommerce-recommendations-podlet-isolated>
+  
+</recommerce-recommendations-podlet-isolated>
+<script>(()=>{function e(d){HTMLTemplateElement.prototype.hasOwnProperty("shadowRootMode")||d.querySelectorAll("template[shadowrootmode]").forEach(o=>{let n=o.getAttribute("shadowrootmode"),s=o.hasAttribute("shadowrootdelegatesfocus"),t=o.parentNode.attachShadow({mode:n,delegatesFocus:s});t.appendChild(o.content),o.remove(),e(t)})}var r;(r=document.currentScript)!=null&&r.previousElementSibling&&e(document.currentScript.previousElementSibling);})();
+</script></div><div slot="suggestions">
+<style>recommerce-suggestions-podlet-isolated:not(:defined) > template[shadowrootmode] ~ *  {opacity:0;visibility:hidden;}</style>
+<recommerce-suggestions-podlet-isolated>
+  
+</recommerce-suggestions-podlet-isolated>
+<script>(()=>{function e(d){HTMLTemplateElement.prototype.hasOwnProperty("shadowRootMode")||d.querySelectorAll("template[shadowrootmode]").forEach(o=>{let n=o.getAttribute("shadowrootmode"),s=o.hasAttribute("shadowrootdelegatesfocus"),t=o.parentNode.attachShadow({mode:n,delegatesFocus:s});t.appendChild(o.content),o.remove(),e(t)})}var r;(r=document.currentScript)!=null&&r.previousElementSibling&&e(document.currentScript.previousElementSibling);})();
+</script></div>
+        </podium-layout>
+        <script>(()=>{function e(d){HTMLTemplateElement.prototype.hasOwnProperty("shadowRootMode")||d.querySelectorAll("template[shadowrootmode]").forEach(o=>{let n=o.getAttribute("shadowrootmode"),s=o.hasAttribute("shadowrootdelegatesfocus"),t=o.parentNode.attachShadow({mode:n,delegatesFocus:s});t.appendChild(o.content),o.remove(),e(t)})}var r;(r=document.currentScript)!=null&&r.previousElementSibling&&e(document.currentScript.previousElementSibling);})();</script>
+    
+          <script src="https://static.finncdn.no/_c/polyfill/v2.0.0/polyfills.js" crossorigin="" nomodule=""></script>
+        <script src="https://static.finncdn.no/_c/common-browserbundle/v5.0.0/main.min.js" crossorigin="" defer=""></script>
+          
+          
+          
+          <script src="https://assets.dba.dk/pkg/recommerce-item-page/1.0.1379/entry.client.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/advertising-podlet/0.0.984/client/client.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/broadcast-podlet/1.0.41/main.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/footer/1.1.169/footer.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/topbar/1.0.397/header.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/login-refresh/1.0.91/esm.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/contact-button-podlet/1.0.111/index.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.finn.no/pkg/tjt-podlet-create-offer-button/1.0.476/browser/client-entry.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/recommerce-recommendations-podlet/0.0.214/entry.client.js" type="module" crossorigin="" defer=""></script>
+        <script src="https://assets.dba.dk/pkg/recommerce-suggestions-podlet/0.0.94/entry.client.js" type="module" crossorigin="" defer=""></script>
+          <script type="text/javascript" async="" src="https://static.finncdn.no/_c/cookie-whitelist/v1.0.24/clean.min.js"></script><script type="text/javascript" defer="" src="https://sdk-cdn.pulse.m10s.io/versioned/3/loader.min.js"></script><script type="text/javascript" defer="" src="https://assets.finn.no/pkg/@finn-no/finn-pulse-init/v1/finn-pulse-init.min.js"></script><script type="text/javascript" defer="" src="https://assets.finn.no/pkg/@finn-no/pulse-sdk/v0/client.min.js"></script><script>var LPMeta = { 'disablePageview': 1 }</script><script type="text/javascript" async="" src="https://log.medietall.no/analytics.js"></script><script async="" src="https://cmpv2.dba.dk/unified/wrapperMessagingWithoutDetection.js"></script>
+          
+          
+          
+          
+          
+      
+  <iframe name="__tcfapiLocator" style="display: none;" inert=""></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;" inert=""></iframe><script type="text/javascript" id="" charset="">(function(){function d(b,f,a){b=["Recommendation inscreen"];!a||!a.event||a.event.name&&b.includes(a.event.name)||(window.dataLayer=window.dataLayer||[],window.dataLayer.push({event:"pulseEventRequest",url:"https:\/\/www.dba.dk\/recommerce\/forsale\/item\/8947725",data:a}))}function c(){window.pulseTrackerEvents&&typeof window.pulseTrackerEvents.addEventListener==="function"&&window.pulseTrackerEvents.addEventListener(d)}if(!window.pulseEventListenerLoaded)if(window.pulseEventListenerLoaded=!0,window.pulseTrackerEvents)c();else var e=
+setInterval(function(){window.pulseTrackerEvents&&(c(),clearInterval(e))},50)})();</script><div id="sp_message_container_1274320" style="display: block;"><iframe src="https://cmpv2.dba.dk/privacy-manager/index.html?hasCsp=true&amp;consent_origin=https%3A%2F%2Fcmpv2.dba.dk%2Fconsent%2Ftcfv2&amp;consentUUID=null&amp;message_id=1274320&amp;site_id=35416&amp;mms_origin=https%3A%2F%2Fcmpv2.dba.dk%2Fmms%2Fv2&amp;version=v1&amp;consentLanguage=da" id="sp_message_iframe_1274320" title="Cookieindstillinger"></iframe></div><div id="modal-div"><!----><onboarding-modal locale="da" messages="{}" brand="DBA"></onboarding-modal></div><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" id="16e9ea3911395b8" width="0" height="0" src="about:blank" name="__pb_locator__" style="display: none; height: 0px; width: 0px; border: 0px;"></iframe></body></html>
